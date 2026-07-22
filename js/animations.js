@@ -49,24 +49,8 @@
     });
   }
 
-  /* 1) TÍTULO DO HERO — splitText + bounce dos caracteres (uma vez) */
-  function heroTitle() {
-    var el = document.querySelector('[data-splittext]');
-    if (!el || !A || reduceMotion || !has('animate')) return; // fica visível como está
-    var chars = splitToChars(el);
-    A.animate(chars, {
-      y: [
-        { to: '-2.4rem', ease: 'outExpo', duration: 600 },
-        { to: 0, ease: 'outBounce', duration: 800, delay: 80 }
-      ],
-      rotate: { from: '-1turn', delay: 0 },
-      opacity: { from: 0, duration: 300 },
-      delay: has('stagger') ? A.stagger(45) : 45,
-      ease: 'inOutCirc'
-    });
-  }
-
-  /* 2) TÍTULOS DAS SEÇÕES — splitText + animate/stagger ao entrar na tela */
+  /* TÍTULOS DAS SEÇÕES — splitText + animate/stagger ao entrar na tela.
+     (O título do hero tem entrada própria em CSS, sempre visível.) */
   function sectionTitles() {
     var titles = document.querySelectorAll('[data-chars]');
     if (!titles.length || !A || reduceMotion || !has('animate')) return;
@@ -93,7 +77,6 @@
   /* boot */
   function boot() {
     loadAnime().then(function () {
-      try { heroTitle(); } catch (e) { console.warn(e); }
       try { sectionTitles(); } catch (e) { console.warn(e); }
     });
   }
