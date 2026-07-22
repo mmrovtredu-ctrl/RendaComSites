@@ -81,20 +81,92 @@
           </ul>
         </div>
 
-        <!-- 3D tech panel / animated bento grid (anime.js createLayout target) -->
+        <!-- Cena animada: pessoa criando um site (SVG, sem emoji) -->
         <div class="hero__visual reveal" id="heroVisual">
+          <div class="hero__card-glow"></div>
           <div class="tilt" data-tilt>
-            <div class="layout-container" aria-hidden="true">
-              <div class="cell c1"><span>&lt;/&gt;</span></div>
-              <div class="cell c2"><span>UI</span></div>
-              <div class="cell c3"><span>$</span></div>
-              <div class="cell c4"><span>SEO</span></div>
-              <div class="cell c5"><span>UX</span></div>
-              <div class="cell c6"><span>API</span></div>
-            </div>
-            <div class="hero__card-glow"></div>
+            <svg class="dev-scene" viewBox="0 0 560 480" role="img"
+                 aria-label="Ilustração de uma pessoa criando um site no computador">
+              <defs>
+                <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#46a2ff"/><stop offset="1" stop-color="#1b52c9"/>
+                </linearGradient>
+                <linearGradient id="gCyan" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#37e6ff"/><stop offset="1" stop-color="#2f7bff"/>
+                </linearGradient>
+                <linearGradient id="gScreen" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0e1830"/><stop offset="1" stop-color="#0a1226"/>
+                </linearGradient>
+              </defs>
+
+              <!-- chão / base -->
+              <ellipse cx="280" cy="452" rx="230" ry="20" fill="rgba(47,123,255,.12)"/>
+
+              <!-- MONITOR: um site sendo montado ao vivo -->
+              <g class="scene-monitor">
+                <rect x="150" y="40" width="330" height="220" rx="14" fill="url(#gScreen)"
+                      stroke="rgba(120,160,255,.35)" stroke-width="2"/>
+                <!-- barra do navegador -->
+                <rect x="150" y="40" width="330" height="30" rx="14" fill="#0c1428"/>
+                <circle cx="170" cy="55" r="4" fill="#ff5f57"/>
+                <circle cx="184" cy="55" r="4" fill="#febc2e"/>
+                <circle cx="198" cy="55" r="4" fill="#28c840"/>
+                <rect x="220" y="49" width="230" height="12" rx="6" fill="#111c36"/>
+                <text x="234" y="59" class="scene-url">rendacomsites.com</text>
+                <!-- conteúdo do site sendo "construído" -->
+                <rect class="bld b1" x="168" y="86"  width="120" height="14" rx="4" fill="url(#gCyan)"/>
+                <rect class="bld b2" x="168" y="108" width="294" height="42" rx="8" fill="rgba(47,123,255,.20)" stroke="rgba(120,160,255,.35)"/>
+                <rect class="bld b3" x="168" y="162" width="88" height="70" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <rect class="bld b4" x="271" y="162" width="88" height="70" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <rect class="bld b5" x="374" y="162" width="88" height="70" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <rect class="bld b6" x="374" y="112" width="70" height="34" rx="17" fill="url(#gBlue)"/>
+                <!-- cursor que se move -->
+                <g class="scene-cursor">
+                  <path d="M0 0 L0 16 L4 12 L7 18 L9 17 L6 11 L11 11 Z" fill="#eaf0ff" stroke="#0a1226" stroke-width="1"/>
+                </g>
+                <!-- pé do monitor -->
+                <rect x="300" y="260" width="30" height="26" fill="#0c1428"/>
+                <rect x="270" y="286" width="90" height="8" rx="4" fill="#0c1428"/>
+              </g>
+
+              <!-- barra de progresso "publicando" -->
+              <g class="scene-deploy">
+                <rect x="360" y="300" width="150" height="30" rx="15" fill="#0c1428" stroke="rgba(120,160,255,.3)"/>
+                <rect x="360" y="300" width="150" height="30" rx="15" fill="none"/>
+                <clipPath id="clipBar"><rect x="368" y="313" width="112" height="6" rx="3"/></clipPath>
+                <rect x="368" y="313" width="112" height="6" rx="3" fill="#16233f"/>
+                <rect class="scene-bar" x="368" y="313" width="112" height="6" rx="3" fill="url(#gCyan)" clip-path="url(#clipBar)"/>
+                <text x="368" y="309" class="scene-mini">deploy</text>
+              </g>
+
+              <!-- PESSOA criando o site -->
+              <g class="scene-person">
+                <!-- cadeira -->
+                <path d="M70 300 q-16 40 4 150" stroke="#16233f" stroke-width="10" fill="none" stroke-linecap="round"/>
+                <!-- corpo -->
+                <path d="M60 300 q34 -26 78 -6 l-6 78 q-40 12 -78 0 Z" fill="url(#gBlue)"/>
+                <!-- braço que digita -->
+                <path class="scene-arm" d="M120 300 q34 6 44 40" stroke="#2f7bff" stroke-width="16" fill="none" stroke-linecap="round"/>
+                <!-- cabeça -->
+                <circle cx="86" cy="258" r="30" fill="#dfe9ff"/>
+                <path d="M58 250 q28 -34 56 0 q-6 -30 -28 -30 q-24 0 -28 30 Z" fill="#0f1a30"/>
+                <!-- laptop na mesa -->
+                <g class="scene-laptop">
+                  <rect x="120" y="352" width="120" height="76" rx="8" fill="#0c1428" stroke="rgba(120,160,255,.3)"/>
+                  <rect class="code l1" x="134" y="368" width="60" height="7" rx="3" fill="#37e6ff"/>
+                  <rect class="code l2" x="134" y="382" width="88" height="7" rx="3" fill="rgba(120,160,255,.5)"/>
+                  <rect class="code l3" x="146" y="396" width="70" height="7" rx="3" fill="rgba(120,160,255,.35)"/>
+                  <rect class="code l4" x="134" y="410" width="50" height="7" rx="3" fill="url(#gBlue)"/>
+                </g>
+                <rect x="104" y="430" width="152" height="12" rx="6" fill="#0a1120"/>
+              </g>
+
+              <!-- elementos flutuantes -->
+              <g class="scene-float f1"><rect x="440" y="70" width="60" height="34" rx="10" fill="#0f1a30" stroke="rgba(55,230,255,.5)"/><text x="452" y="92" class="scene-tag">&lt;/&gt;</text></g>
+              <g class="scene-float f2"><rect x="70" y="70" width="72" height="34" rx="10" fill="#0f1a30" stroke="rgba(47,123,255,.5)"/><text x="82" y="92" class="scene-tag">UI · UX</text></g>
+            </svg>
           </div>
-          <div class="chip chip--a">deploy ✔</div>
+          <div class="chip chip--a">deploy <span class="chip__ok">✓</span></div>
           <div class="chip chip--b">venda #37</div>
         </div>
       </div>
@@ -129,19 +201,36 @@
 
         <div class="grid grid--3">
           <article class="card reveal">
-            <div class="card__icon">🚀</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4.5 16.5 3 21l4.5-1.5"/><path d="M9 15l0 0"/>
+                <path d="M14 4c3.5-1 6 1.5 6 6-2 1-4 1.5-6 1.5"/>
+                <path d="M14 4c-2 4-5 6-9 6l3 4c4 0 6-3 6-10Z"/>
+                <circle cx="14.5" cy="9.5" r="1.4"/>
+              </svg>
+            </div>
             <h3>Comece do absoluto zero</h3>
             <p>Sem enrolação técnica. Você aprende a montar um site profissional
                do início, mesmo que nunca tenha escrito uma linha de código.</p>
           </article>
           <article class="card reveal">
-            <div class="card__icon">🛒</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/>
+                <path d="M2.5 3h2l2.2 12.5a1.5 1.5 0 0 0 1.5 1.2h8.4a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/>
+              </svg>
+            </div>
             <h3>Sites e lojas que vendem</h3>
             <p>Do site institucional à loja online completa, prontos para
                converter visitantes em clientes e pedidos.</p>
           </article>
           <article class="card reveal">
-            <div class="card__icon">💰</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2v20"/>
+                <path d="M17 6.5c-1-1.3-2.8-2-5-2-2.8 0-4.5 1.3-4.5 3.2 0 4.6 9.5 2.4 9.5 7 0 2-1.9 3.3-5 3.3-2.4 0-4.2-.8-5.2-2.1"/>
+              </svg>
+            </div>
             <h3>Transforme em renda</h3>
             <p>Aprenda a precificar, abordar clientes e fechar contratos —
                criando sites por você mesmo ou como serviço.</p>
@@ -160,55 +249,65 @@
              estética e comercial andando juntos.</p>
         </div>
 
-        <div class="bento">
-          <article class="bento__item bento--wide reveal">
-            <span class="bento__no">01</span>
+        <div class="modules">
+          <article class="module reveal">
+            <span class="module__no">01</span>
             <h3>Criação de sites</h3>
             <p>Estrutura, publicação e manutenção de sites e lojas online
                profissionais, rápidos e responsivos — do rascunho ao site no ar.</p>
-            <div class="bento__tags"><span>HTML/CSS</span><span>Layout</span><span>Responsivo</span><span>Deploy</span></div>
+            <div class="module__tags"><span>HTML/CSS</span><span>Layout</span><span>Responsivo</span></div>
           </article>
 
-          <article class="bento__item reveal">
-            <span class="bento__no">02</span>
+          <article class="module reveal">
+            <span class="module__no">02</span>
             <h3>Design</h3>
             <p>Cores, tipografia e hierarquia que passam profissionalismo e vendem.</p>
+            <div class="module__tags"><span>Visual</span><span>Identidade</span></div>
           </article>
 
-          <article class="bento__item reveal">
-            <span class="bento__no">03</span>
+          <article class="module reveal">
+            <span class="module__no">03</span>
             <h3>Abordagem</h3>
             <p>Como encontrar e abordar clientes que precisam de site — sem parecer
                spam.</p>
+            <div class="module__tags"><span>Prospecção</span><span>Scripts</span></div>
           </article>
 
-          <article class="bento__item reveal">
-            <span class="bento__no">04</span>
+          <article class="module reveal">
+            <span class="module__no">04</span>
             <h3>Vendas</h3>
             <p>Precificação, proposta e fechamento. Transforme conversa em contrato.</p>
+            <div class="module__tags"><span>Preço</span><span>Fechamento</span></div>
           </article>
 
-          <article class="bento__item bento--tall reveal">
-            <span class="bento__no">05</span>
+          <article class="module reveal">
+            <span class="module__no">05</span>
             <h3>Comunicação</h3>
             <p>Fale a língua do cliente, alinhe expectativas e crie relacionamento
                que gera indicação e recompra.</p>
-            <div class="bento__tags"><span>Copy</span><span>Atendimento</span><span>Relacionamento</span></div>
+            <div class="module__tags"><span>Copy</span><span>Atendimento</span></div>
           </article>
 
-          <article class="bento__item reveal">
-            <span class="bento__no">06</span>
+          <article class="module reveal">
+            <span class="module__no">06</span>
             <h3>Loja online</h3>
             <p>Catálogo, checkout e boas práticas para lojas que ainda não têm site.</p>
+            <div class="module__tags"><span>E-commerce</span><span>Checkout</span></div>
           </article>
+        </div>
 
-          <article class="bento__item bento--wide reveal">
-            <span class="bento__no">+</span>
+        <article class="module module--banner reveal">
+          <div class="module__banner-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v18M3 12h18"/>
+            </svg>
+          </div>
+          <div>
             <h3>E vários outros temas do mercado</h3>
             <p>Organização de projetos, ferramentas, portfólio e os bastidores de
                quem já criou lojas faturando <strong>+100k</strong>.</p>
-          </article>
-        </div>
+          </div>
+        </article>
       </div>
     </section>
 
