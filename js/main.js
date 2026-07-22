@@ -76,6 +76,26 @@
     });
   }
 
+  /* ---------- marquee: garante loop sem gap em qualquer largura ----------
+     Cada um dos 2 grupos precisa ser >= largura da tela. Se não for
+     (telas ultrawide), duplica o conteúdo dos grupos até cobrir. */
+  (function () {
+    var track = document.getElementById('marqueeTrack');
+    if (!track) return;
+    var groups = track.querySelectorAll('.marquee__group');
+    if (groups.length < 2) return;
+    var need = function () { return track.parentElement.clientWidth; };
+    function ensureWidth() {
+      var guard = 0;
+      while (groups[0].scrollWidth < need() && guard < 6) {
+        for (var i = 0; i < groups.length; i++) groups[i].innerHTML += groups[i].innerHTML;
+        guard++;
+      }
+    }
+    ensureWidth();
+    window.addEventListener('resize', ensureWidth, { passive: true });
+  })();
+
   /* ---------- smooth scroll com offset do header ---------- */
   var headerH = 68;
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
