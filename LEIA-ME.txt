@@ -14,6 +14,15 @@ COMO ABRIR
   inteira em qualquer serviço (Hostinger, Vercel, Netlify, etc.).
   Obs.: as animações usam anime.js v4 via CDN (precisa de internet).
 
+IMPORTANTE AO ATUALIZAR NO VERCEL/HOSPEDAGEM
+  Se você viu a página "bugada" (seção sem estilo, ícone gigante), era
+  CSS antigo em cache. Ao subir esta versão:
+   1) Substitua TODOS os arquivos (index.html, css/, js/, img/).
+   2) Faça o deploy novamente.
+   3) Abra o site e dê um "hard refresh": Ctrl+Shift+R (ou Ctrl+F5).
+  Esta versão foi blindada: mesmo se o JavaScript falhar, o conteúdo
+  aparece normalmente (nunca fica invisível ou sem estilo).
+
 O QUE VOCÊ PRECISA TROCAR (procure por "PLACEHOLDER" no index.html)
   1. PREÇO  → seção "OFERTA": troque "12x de R$ 49,70 / R$ 497 à vista"
               pelos valores reais.

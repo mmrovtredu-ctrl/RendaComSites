@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Renda com Sites — Do zero ao primeiro site que fatura</title>
   <meta name="description" content="Curso online Renda com Sites: aprenda a criar sites e lojas online, abordar clientes, vender, design e comunicação. Comece do zero no mercado digital." />
+  <meta name="theme-color" content="#070b16" />
+
+  <!-- fail-safe: só ativa as animações de entrada se o JS estiver rodando.
+       Se o JS falhar/for bloqueado, o conteúdo aparece normalmente. -->
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- Fonts: Tech Startup pairing (Space Grotesk + DM Sans) + Orbitron accent -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -424,7 +429,12 @@
             Quero garantir minha vaga
             <span class="btn__glow"></span>
           </a>
-          <p class="offer__safe">🔒 Compra segura • 7 dias de garantia incondicional</p>
+          <p class="offer__safe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="10.5" width="16" height="10" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/>
+            </svg>
+            Compra segura • 7 dias de garantia incondicional
+          </p>
         </div>
       </div>
     </section>
