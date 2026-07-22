@@ -1,0 +1,32 @@
+RENDA COM SITES — Página de Vendas
+===================================
+
+ESTRUTURA
+  index.html          → estrutura da página
+  css/style.css       → todo o visual (dark + azul, efeitos 3D/LED, responsivo)
+  js/main.js          → menu mobile, scroll reveal, tilt 3D, etc.
+  js/animations.js    → animações anime.js (título, grid do hero, títulos)
+  img/carlos.jpg      → foto do Carlos Eduardo  (SUBSTITUA por sua foto)
+  img/mariana.jpg     → foto da Mariana Brito   (SUBSTITUA por sua foto)
+
+COMO ABRIR
+  É só abrir o index.html no navegador (duplo clique) ou hospedar a pasta
+  inteira em qualquer serviço (Hostinger, Vercel, Netlify, etc.).
+  Obs.: as animações usam anime.js v4 via CDN (precisa de internet).
+
+O QUE VOCÊ PRECISA TROCAR (procure por "PLACEHOLDER" no index.html)
+  1. PREÇO  → seção "OFERTA": troque "12x de R$ 49,70 / R$ 497 à vista"
+              pelos valores reais.
+  2. LINK DE COMPRA → todos os botões apontam para "#checkout".
+              Troque o href pelo seu link de checkout (Hotmart, Kiwify...).
+  3. FOTOS  → substitua os arquivos img/carlos.jpg e img/mariana.jpg
+              (mantendo os mesmos nomes) por fotos reais, de preferência
+              quadradas (ex.: 800x800).
+  4. TEXTO DA MARIANA → está em "lorem ipsum" (provisório), como combinado.
+
+INSTAGRAMS já configurados
+  Carlos:  https://www.instagram.com/eduardo_devjr/
+  Mariana: https://www.instagram.com/marianabritoig/
+
+RESPONSIVO
+  Funciona em celular e computador (menu vira "hambúrguer" no mobile).

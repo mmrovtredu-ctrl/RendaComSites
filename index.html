@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renda com Sites — Do zero ao primeiro site que fatura</title>
+  <meta name="description" content="Curso online Renda com Sites: aprenda a criar sites e lojas online, abordar clientes, vender, design e comunicação. Comece do zero no mercado digital." />
+
+  <!-- Fonts: Tech Startup pairing (Space Grotesk + DM Sans) + Orbitron accent -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Orbitron:wght@600;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ambient background: grid + glowing orbs -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="scanline"></div>
+  </div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#topo" class="brand" aria-label="Renda com Sites - início">
+        <span class="brand__mark">&lt;/&gt;</span>
+        <span class="brand__text">RENDA<span class="brand__accent">COM</span>SITES</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#curso">O curso</a>
+        <a href="#aprender">O que você aprende</a>
+        <a href="#instrutores">Instrutores</a>
+        <a href="#oferta">Oferta</a>
+        <a href="#faq">FAQ</a>
+        <a href="#checkout" class="btn btn--sm btn--primary nav__cta">Quero entrar</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="pill reveal">
+            <span class="pill__dot"></span> Curso online • do zero ao primeiro site
+          </span>
+
+          <h1 class="hero__title" data-splittext>RENDA COM SITES</h1>
+
+          <p class="hero__sub reveal">
+            Aprenda a <strong>criar sites e lojas online</strong> — e a transformar isso
+            em renda. Do design à abordagem de clientes, das vendas à comunicação:
+            o método completo para quem quer começar no digital ou colocar
+            negócios físicos na internet.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a href="#checkout" class="btn btn--primary btn--lg">
+              Garantir minha vaga
+              <span class="btn__glow"></span>
+            </a>
+            <a href="#curso" class="btn btn--ghost btn--lg">Ver o conteúdo</a>
+          </div>
+
+          <ul class="hero__proof reveal">
+            <li><b>+5</b> anos criando sites</li>
+            <li><b>+100k</b> faturados por lojas criadas</li>
+            <li><b>100%</b> online e no seu ritmo</li>
+          </ul>
+        </div>
+
+        <!-- 3D tech panel / animated bento grid (anime.js createLayout target) -->
+        <div class="hero__visual reveal" id="heroVisual">
+          <div class="tilt" data-tilt>
+            <div class="layout-container" aria-hidden="true">
+              <div class="cell c1"><span>&lt;/&gt;</span></div>
+              <div class="cell c2"><span>UI</span></div>
+              <div class="cell c3"><span>$</span></div>
+              <div class="cell c4"><span>SEO</span></div>
+              <div class="cell c5"><span>UX</span></div>
+              <div class="cell c6"><span>API</span></div>
+            </div>
+            <div class="hero__card-glow"></div>
+          </div>
+          <div class="chip chip--a">deploy ✔</div>
+          <div class="chip chip--b">venda #37</div>
+        </div>
+      </div>
+      <a href="#curso" class="scroll-hint" aria-hidden="true"><span></span></a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>CRIAÇÃO DE SITES</span><i>◇</i><span>LOJAS ONLINE</span><i>◇</i>
+        <span>DESIGN</span><i>◇</i><span>ABORDAGEM</span><i>◇</i><span>VENDAS</span><i>◇</i>
+        <span>COMUNICAÇÃO</span><i>◇</i><span>CRIAÇÃO DE SITES</span><i>◇</i>
+        <span>LOJAS ONLINE</span><i>◇</i><span>DESIGN</span><i>◇</i><span>ABORDAGEM</span><i>◇</i>
+        <span>VENDAS</span><i>◇</i><span>COMUNICAÇÃO</span><i>◇</i>
+      </div>
+    </div>
+
+    <!-- ================= QUEM SOMOS / CURSO ================= -->
+    <section class="section" id="curso">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Quem somos</span>
+          <h2 class="sec-title" data-chars>O curso Renda com Sites</h2>
+          <p class="sec-desc">
+            Somos criadores de sites que vivem do digital — e resolvemos ensinar
+            o caminho completo, do primeiro clique ao cliente pagando. O
+            <strong>Renda com Sites</strong> foi feito para quem quer começar a criar
+            sites e lojas online, seja para vender no digital ou para atender
+            negócios que ainda não têm presença na internet.
+          </p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card reveal">
+            <div class="card__icon">🚀</div>
+            <h3>Comece do absoluto zero</h3>
+            <p>Sem enrolação técnica. Você aprende a montar um site profissional
+               do início, mesmo que nunca tenha escrito uma linha de código.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">🛒</div>
+            <h3>Sites e lojas que vendem</h3>
+            <p>Do site institucional à loja online completa, prontos para
+               converter visitantes em clientes e pedidos.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">💰</div>
+            <h3>Transforme em renda</h3>
+            <p>Aprenda a precificar, abordar clientes e fechar contratos —
+               criando sites por você mesmo ou como serviço.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= O QUE VOCÊ VAI APRENDER (BENTO) ================= -->
+    <section class="section" id="aprender">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Conteúdo</span>
+          <h2 class="sec-title" data-chars>O que você vai dominar</h2>
+          <p class="sec-desc">Um currículo pensado para o mercado real — técnica,
+             estética e comercial andando juntos.</p>
+        </div>
+
+        <div class="bento">
+          <article class="bento__item bento--wide reveal">
+            <span class="bento__no">01</span>
+            <h3>Criação de sites</h3>
+            <p>Estrutura, publicação e manutenção de sites e lojas online
+               profissionais, rápidos e responsivos — do rascunho ao site no ar.</p>
+            <div class="bento__tags"><span>HTML/CSS</span><span>Layout</span><span>Responsivo</span><span>Deploy</span></div>
+          </article>
+
+          <article class="bento__item reveal">
+            <span class="bento__no">02</span>
+            <h3>Design</h3>
+            <p>Cores, tipografia e hierarquia que passam profissionalismo e vendem.</p>
+          </article>
+
+          <article class="bento__item reveal">
+            <span class="bento__no">03</span>
+            <h3>Abordagem</h3>
+            <p>Como encontrar e abordar clientes que precisam de site — sem parecer
+               spam.</p>
+          </article>
+
+          <article class="bento__item reveal">
+            <span class="bento__no">04</span>
+            <h3>Vendas</h3>
+            <p>Precificação, proposta e fechamento. Transforme conversa em contrato.</p>
+          </article>
+
+          <article class="bento__item bento--tall reveal">
+            <span class="bento__no">05</span>
+            <h3>Comunicação</h3>
+            <p>Fale a língua do cliente, alinhe expectativas e crie relacionamento
+               que gera indicação e recompra.</p>
+            <div class="bento__tags"><span>Copy</span><span>Atendimento</span><span>Relacionamento</span></div>
+          </article>
+
+          <article class="bento__item reveal">
+            <span class="bento__no">06</span>
+            <h3>Loja online</h3>
+            <p>Catálogo, checkout e boas práticas para lojas que ainda não têm site.</p>
+          </article>
+
+          <article class="bento__item bento--wide reveal">
+            <span class="bento__no">+</span>
+            <h3>E vários outros temas do mercado</h3>
+            <p>Organização de projetos, ferramentas, portfólio e os bastidores de
+               quem já criou lojas faturando <strong>+100k</strong>.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PARA QUEM É ================= -->
+    <section class="section" id="paraquem">
+      <div class="container">
+        <div class="split">
+          <div class="split__col reveal">
+            <span class="eyebrow">Para quem é</span>
+            <h2 class="sec-title">Feito pra você que…</h2>
+            <ul class="check">
+              <li>Quer <strong>começar a criar sites e lojas online</strong> do zero.</li>
+              <li>Deseja uma <strong>nova fonte de renda</strong> no digital.</li>
+              <li>Tem um negócio e quer <strong>colocá-lo na internet</strong>.</li>
+              <li>Presta serviço e quer <strong>vender sites</strong> como serviço.</li>
+              <li>Já mexe com sites, mas <strong>não sabe vender</strong> o que cria.</li>
+            </ul>
+          </div>
+          <div class="split__col reveal">
+            <span class="eyebrow eyebrow--muted">Não é pra você que…</span>
+            <h2 class="sec-title sec-title--muted">Talvez não seja se…</h2>
+            <ul class="cross">
+              <li>Procura enriquecimento rápido sem colocar a mão na massa.</li>
+              <li>Não pretende aplicar nada do que aprender.</li>
+              <li>Quer apenas teoria, sem foco em resultado e venda.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INSTRUTORES ================= -->
+    <section class="section" id="instrutores">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Instrutores</span>
+          <h2 class="sec-title" data-chars>Quem vai te ensinar</h2>
+        </div>
+
+        <div class="grid grid--2 instructors">
+          <article class="instructor reveal tilt" data-tilt>
+            <div class="instructor__photo">
+              <img src="img/carlos.jpg" alt="Foto de Carlos Eduardo, programador fullstack" loading="lazy" />
+              <div class="instructor__ring"></div>
+            </div>
+            <div class="instructor__body">
+              <h3>Carlos Eduardo</h3>
+              <span class="instructor__role">Programador Fullstack</span>
+              <p>
+                Programador fullstack há 4 anos e criador de sites há mais de 5.
+                Já desenvolvi lojas online que faturam <strong>mais de 100 mil</strong>.
+                No Renda com Sites eu mostro, na prática, o caminho técnico e
+                comercial que uso no dia a dia.
+              </p>
+              <a class="ig" href="https://www.instagram.com/eduardo_devjr/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.42a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C2.21 15.58 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.42 2.21 8.8 2.2 12 2.2Zm0 3.2A6.6 6.6 0 1 0 18.6 12 6.6 6.6 0 0 0 12 5.4Zm0 10.9A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3Zm6.85-11.2a1.54 1.54 0 1 1-1.54-1.54 1.54 1.54 0 0 1 1.54 1.54Z"/></svg>
+                @eduardo_devjr
+              </a>
+            </div>
+          </article>
+
+          <article class="instructor reveal tilt" data-tilt>
+            <div class="instructor__photo">
+              <img src="img/mariana.jpg" alt="Foto de Mariana Brito" loading="lazy" />
+              <div class="instructor__ring instructor__ring--alt"></div>
+            </div>
+            <div class="instructor__body">
+              <h3>Mariana Brito</h3>
+              <span class="instructor__role">Co-criadora do curso</span>
+              <p class="lorem">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. <em>(Texto provisório — será atualizado.)</em>
+              </p>
+              <a class="ig" href="https://www.instagram.com/marianabritoig/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.17.05 1.8.25 2.23.42.56.22.96.48 1.38.9.42.42.68.82.9 1.38.17.42.37 1.06.42 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.05 1.17-.25 1.8-.42 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.17-1.06.37-2.23.42-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.05-1.8-.25-2.23-.42a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.17-.42-.37-1.06-.42-2.23C2.21 15.58 2.2 15.2 2.2 12s0-3.58.07-4.85c.05-1.17.25-1.8.42-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.17 1.06-.37 2.23-.42C8.42 2.21 8.8 2.2 12 2.2Zm0 3.2A6.6 6.6 0 1 0 18.6 12 6.6 6.6 0 0 0 12 5.4Zm0 10.9A4.3 4.3 0 1 1 16.3 12 4.3 4.3 0 0 1 12 16.3Zm6.85-11.2a1.54 1.54 0 1 1-1.54-1.54 1.54 1.54 0 0 1 1.54 1.54Z"/></svg>
+                @marianabritoig
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OFERTA / CHECKOUT ================= -->
+    <section class="section section--offer" id="oferta">
+      <div class="container">
+        <div class="offer reveal" id="checkout">
+          <div class="offer__glow"></div>
+          <span class="eyebrow">A oferta</span>
+          <h2 class="sec-title">Acesso completo ao Renda com Sites</h2>
+          <p class="offer__desc">Todos os módulos, atualizações e a comunidade —
+             para você sair do zero e criar sites que geram renda.</p>
+
+          <ul class="offer__list">
+            <li>Criação de sites e lojas online do zero</li>
+            <li>Design, abordagem, vendas e comunicação</li>
+            <li>Bastidores de lojas que faturam +100k</li>
+            <li>Acesso vitalício e no seu ritmo</li>
+          </ul>
+
+          <div class="offer__price">
+            <span class="offer__from">de <s>R$ 997</s> por</span>
+            <div class="offer__now">
+              <span class="offer__x">12x de</span>
+              <span class="offer__value">R$ 49<small>,70</small></span>
+            </div>
+            <span class="offer__cash">ou R$ 497 à vista <!-- PLACEHOLDER: ajuste o valor real --></span>
+          </div>
+
+          <!-- PLACEHOLDER: troque o href por seu link de checkout (Hotmart, Kiwify, etc.) -->
+          <a href="#checkout" class="btn btn--primary btn--lg btn--block">
+            Quero garantir minha vaga
+            <span class="btn__glow"></span>
+          </a>
+          <p class="offer__safe">🔒 Compra segura • 7 dias de garantia incondicional</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Dúvidas</span>
+          <h2 class="sec-title" data-chars>Perguntas frequentes</h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary>Preciso saber programar para começar?</summary>
+            <p>Não. O curso foi feito para iniciantes: você começa do zero e evolui
+               passo a passo até publicar seu primeiro site.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Serve para colocar minha loja física na internet?</summary>
+            <p>Sim. Uma parte do conteúdo é dedicada a levar negócios que ainda não
+               têm site para o digital, incluindo lojas online.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Vou aprender a conseguir clientes?</summary>
+            <p>Sim. Abordagem, vendas e comunicação são pilares do curso — não é só
+               técnica, é como transformar isso em renda.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Por quanto tempo tenho acesso?</summary>
+            <p>O acesso é vitalício e no seu ritmo, com as atualizações incluídas.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Existe garantia?</summary>
+            <p>Sim, você tem 7 dias de garantia incondicional. Se não fizer sentido,
+               é só pedir reembolso.</p>
+          </details>
+        </div>
+
+        <div class="faq__cta reveal">
+          <a href="#checkout" class="btn btn--primary btn--lg">Começar agora</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">&lt;/&gt;</span>
+        <span class="brand__text">RENDA<span class="brand__accent">COM</span>SITES</span>
+      </div>
+      <nav class="footer__social">
+        <a href="https://www.instagram.com/eduardo_devjr/" target="_blank" rel="noopener">Instagram — Carlos</a>
+        <a href="https://www.instagram.com/marianabritoig/" target="_blank" rel="noopener">Instagram — Mariana</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> Renda com Sites. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- interações + animações anime.js v4 (carregado via import dinâmico) -->
+  <script src="js/main.js" defer></script>
+  <script src="js/animations.js" defer></script>
+</body>
+</html>
