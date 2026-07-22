@@ -62,7 +62,7 @@
             <span class="pill__dot"></span> Curso online • do zero ao primeiro site
           </span>
 
-          <h1 class="hero__title" data-splittext>RENDA COM SITES</h1>
+          <h1 class="hero__title">RENDA COM SITES</h1>
 
           <p class="hero__sub reveal">
             Aprenda a <strong>criar sites e lojas online</strong> — e a transformar isso
@@ -90,8 +90,8 @@
         <div class="hero__visual reveal" id="heroVisual">
           <div class="hero__card-glow"></div>
           <div class="tilt" data-tilt>
-            <svg class="dev-scene" viewBox="0 0 560 480" role="img"
-                 aria-label="Ilustração de uma pessoa criando um site no computador">
+            <svg class="dev-scene" viewBox="0 0 560 430" role="img"
+                 aria-label="Ilustração de um site sendo criado no computador">
               <defs>
                 <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
                   <stop offset="0" stop-color="#46a2ff"/><stop offset="1" stop-color="#1b52c9"/>
@@ -104,71 +104,50 @@
                 </linearGradient>
               </defs>
 
-              <!-- chão / base -->
-              <ellipse cx="280" cy="452" rx="230" ry="20" fill="rgba(47,123,255,.12)"/>
+              <!-- reflexo/base -->
+              <ellipse cx="280" cy="400" rx="210" ry="18" fill="rgba(47,123,255,.10)"/>
 
-              <!-- MONITOR: um site sendo montado ao vivo -->
+              <!-- NAVEGADOR: um site sendo montado ao vivo (centralizado) -->
               <g class="scene-monitor">
-                <rect x="150" y="40" width="330" height="220" rx="14" fill="url(#gScreen)"
+                <rect x="105" y="46" width="350" height="248" rx="16" fill="url(#gScreen)"
                       stroke="rgba(120,160,255,.35)" stroke-width="2"/>
                 <!-- barra do navegador -->
-                <rect x="150" y="40" width="330" height="30" rx="14" fill="#0c1428"/>
-                <circle cx="170" cy="55" r="4" fill="#ff5f57"/>
-                <circle cx="184" cy="55" r="4" fill="#febc2e"/>
-                <circle cx="198" cy="55" r="4" fill="#28c840"/>
-                <rect x="220" y="49" width="230" height="12" rx="6" fill="#111c36"/>
-                <text x="234" y="59" class="scene-url">rendacomsites.com</text>
-                <!-- conteúdo do site sendo "construído" -->
-                <rect class="bld b1" x="168" y="86"  width="120" height="14" rx="4" fill="url(#gCyan)"/>
-                <rect class="bld b2" x="168" y="108" width="294" height="42" rx="8" fill="rgba(47,123,255,.20)" stroke="rgba(120,160,255,.35)"/>
-                <rect class="bld b3" x="168" y="162" width="88" height="70" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
-                <rect class="bld b4" x="271" y="162" width="88" height="70" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
-                <rect class="bld b5" x="374" y="162" width="88" height="70" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
-                <rect class="bld b6" x="374" y="112" width="70" height="34" rx="17" fill="url(#gBlue)"/>
-                <!-- cursor que se move -->
+                <rect x="105" y="46" width="350" height="34" rx="16" fill="#0c1428"/>
+                <rect x="105" y="64" width="350" height="16" fill="#0c1428"/>
+                <circle cx="127" cy="63" r="4.5" fill="#ff5f57"/>
+                <circle cx="143" cy="63" r="4.5" fill="#febc2e"/>
+                <circle cx="159" cy="63" r="4.5" fill="#28c840"/>
+                <rect x="188" y="55" width="250" height="16" rx="8" fill="#111c36"/>
+                <text x="204" y="67" class="scene-url">rendacomsites.com</text>
+                <!-- conteúdo do site "sendo construído" -->
+                <rect class="bld b1" x="128" y="100" width="140" height="16" rx="4" fill="url(#gCyan)"/>
+                <rect class="bld b2" x="128" y="128" width="304" height="48" rx="8" fill="rgba(47,123,255,.20)" stroke="rgba(120,160,255,.35)"/>
+                <rect class="bld b6" x="360" y="134" width="60" height="34" rx="17" fill="url(#gBlue)"/>
+                <rect class="bld b3" x="128" y="190" width="92" height="76" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <rect class="bld b4" x="234" y="190" width="92" height="76" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <rect class="bld b5" x="340" y="190" width="92" height="76" rx="8" fill="rgba(120,160,255,.10)" stroke="rgba(120,160,255,.25)"/>
+                <!-- cursor que percorre a tela -->
                 <g class="scene-cursor">
                   <path d="M0 0 L0 16 L4 12 L7 18 L9 17 L6 11 L11 11 Z" fill="#eaf0ff" stroke="#0a1226" stroke-width="1"/>
                 </g>
                 <!-- pé do monitor -->
-                <rect x="300" y="260" width="30" height="26" fill="#0c1428"/>
-                <rect x="270" y="286" width="90" height="8" rx="4" fill="#0c1428"/>
+                <rect x="265" y="294" width="30" height="24" fill="#0c1428"/>
+                <rect x="228" y="318" width="104" height="9" rx="4.5" fill="#0c1428"/>
               </g>
 
               <!-- barra de progresso "publicando" -->
               <g class="scene-deploy">
-                <rect x="360" y="300" width="150" height="30" rx="15" fill="#0c1428" stroke="rgba(120,160,255,.3)"/>
-                <rect x="360" y="300" width="150" height="30" rx="15" fill="none"/>
-                <clipPath id="clipBar"><rect x="368" y="313" width="112" height="6" rx="3"/></clipPath>
-                <rect x="368" y="313" width="112" height="6" rx="3" fill="#16233f"/>
-                <rect class="scene-bar" x="368" y="313" width="112" height="6" rx="3" fill="url(#gCyan)" clip-path="url(#clipBar)"/>
-                <text x="368" y="309" class="scene-mini">deploy</text>
+                <rect x="196" y="344" width="168" height="34" rx="17" fill="#0c1428" stroke="rgba(120,160,255,.3)"/>
+                <clipPath id="clipBar"><rect x="206" y="358" width="120" height="7" rx="3.5"/></clipPath>
+                <rect x="206" y="358" width="120" height="7" rx="3.5" fill="#16233f"/>
+                <rect class="scene-bar" x="206" y="358" width="120" height="7" rx="3.5" fill="url(#gCyan)" clip-path="url(#clipBar)"/>
+                <text x="206" y="354" class="scene-mini">publicando site</text>
+                <path class="scene-check" d="M336 361 l5 5 l9 -11" fill="none" stroke="#28c840" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
               </g>
 
-              <!-- PESSOA criando o site -->
-              <g class="scene-person">
-                <!-- cadeira -->
-                <path d="M70 300 q-16 40 4 150" stroke="#16233f" stroke-width="10" fill="none" stroke-linecap="round"/>
-                <!-- corpo -->
-                <path d="M60 300 q34 -26 78 -6 l-6 78 q-40 12 -78 0 Z" fill="url(#gBlue)"/>
-                <!-- braço que digita -->
-                <path class="scene-arm" d="M120 300 q34 6 44 40" stroke="#2f7bff" stroke-width="16" fill="none" stroke-linecap="round"/>
-                <!-- cabeça -->
-                <circle cx="86" cy="258" r="30" fill="#dfe9ff"/>
-                <path d="M58 250 q28 -34 56 0 q-6 -30 -28 -30 q-24 0 -28 30 Z" fill="#0f1a30"/>
-                <!-- laptop na mesa -->
-                <g class="scene-laptop">
-                  <rect x="120" y="352" width="120" height="76" rx="8" fill="#0c1428" stroke="rgba(120,160,255,.3)"/>
-                  <rect class="code l1" x="134" y="368" width="60" height="7" rx="3" fill="#37e6ff"/>
-                  <rect class="code l2" x="134" y="382" width="88" height="7" rx="3" fill="rgba(120,160,255,.5)"/>
-                  <rect class="code l3" x="146" y="396" width="70" height="7" rx="3" fill="rgba(120,160,255,.35)"/>
-                  <rect class="code l4" x="134" y="410" width="50" height="7" rx="3" fill="url(#gBlue)"/>
-                </g>
-                <rect x="104" y="430" width="152" height="12" rx="6" fill="#0a1120"/>
-              </g>
-
-              <!-- elementos flutuantes -->
-              <g class="scene-float f1"><rect x="440" y="70" width="60" height="34" rx="10" fill="#0f1a30" stroke="rgba(55,230,255,.5)"/><text x="452" y="92" class="scene-tag">&lt;/&gt;</text></g>
-              <g class="scene-float f2"><rect x="70" y="70" width="72" height="34" rx="10" fill="#0f1a30" stroke="rgba(47,123,255,.5)"/><text x="82" y="92" class="scene-tag">UI · UX</text></g>
+              <!-- etiquetas flutuantes -->
+              <g class="scene-float f1"><rect x="410" y="92" width="66" height="36" rx="10" fill="#0f1a30" stroke="rgba(55,230,255,.5)"/><text x="424" y="115" class="scene-tag">&lt;/&gt;</text></g>
+              <g class="scene-float f2"><rect x="82" y="150" width="78" height="36" rx="10" fill="#0f1a30" stroke="rgba(47,123,255,.5)"/><text x="95" y="173" class="scene-tag">UI · UX</text></g>
             </svg>
           </div>
           <div class="chip chip--a">deploy <span class="chip__ok">✓</span></div>
@@ -181,11 +160,16 @@
     <!-- ================= MARQUEE ================= -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
-        <span>CRIAÇÃO DE SITES</span><i>◇</i><span>LOJAS ONLINE</span><i>◇</i>
-        <span>DESIGN</span><i>◇</i><span>ABORDAGEM</span><i>◇</i><span>VENDAS</span><i>◇</i>
-        <span>COMUNICAÇÃO</span><i>◇</i><span>CRIAÇÃO DE SITES</span><i>◇</i>
-        <span>LOJAS ONLINE</span><i>◇</i><span>DESIGN</span><i>◇</i><span>ABORDAGEM</span><i>◇</i>
-        <span>VENDAS</span><i>◇</i><span>COMUNICAÇÃO</span><i>◇</i>
+        <div class="marquee__group">
+          <span>CRIAÇÃO DE SITES</span><i>◇</i><span>LOJAS ONLINE</span><i>◇</i>
+          <span>DESIGN</span><i>◇</i><span>ABORDAGEM</span><i>◇</i><span>VENDAS</span><i>◇</i>
+          <span>COMUNICAÇÃO</span><i>◇</i>
+        </div>
+        <div class="marquee__group" aria-hidden="true">
+          <span>CRIAÇÃO DE SITES</span><i>◇</i><span>LOJAS ONLINE</span><i>◇</i>
+          <span>DESIGN</span><i>◇</i><span>ABORDAGEM</span><i>◇</i><span>VENDAS</span><i>◇</i>
+          <span>COMUNICAÇÃO</span><i>◇</i>
+        </div>
       </div>
     </div>
 
@@ -416,12 +400,11 @@
           </ul>
 
           <div class="offer__price">
-            <span class="offer__from">de <s>R$ 997</s> por</span>
+            <span class="offer__from">por apenas</span>
             <div class="offer__now">
-              <span class="offer__x">12x de</span>
-              <span class="offer__value">R$ 49<small>,70</small></span>
+              <span class="offer__value">R$ 197<small>,90</small></span>
             </div>
-            <span class="offer__cash">ou R$ 497 à vista <!-- PLACEHOLDER: ajuste o valor real --></span>
+            <span class="offer__cash">ou 12x de R$ 16,49</span>
           </div>
 
           <!-- PLACEHOLDER: troque o href por seu link de checkout (Hotmart, Kiwify, etc.) -->
