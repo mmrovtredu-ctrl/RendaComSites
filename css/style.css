@@ -265,7 +265,7 @@ strong,b{ color:#fff; font-weight:700; }
 
 /* ---------- MARQUEE (loop contínuo, sem gap) ---------- */
 .marquee{ overflow:hidden; border-block:1px solid var(--line); background:rgba(255,255,255,.015); padding:.9rem 0; }
-.marquee__track{ display:flex; width:max-content; animation:marq 26s linear infinite; }
+.marquee__track{ display:flex; width:max-content; animation:marq 45s linear infinite; }
 .marquee__group{ display:flex; align-items:center; gap:2rem; padding-right:2rem; flex:0 0 auto; }
 .marquee__group span{ font-family:var(--f-head); font-weight:600; letter-spacing:.06em; color:#c9d6f5; font-size:1.05rem; white-space:nowrap; }
 .marquee__group i{ color:var(--blue); font-style:normal; }
